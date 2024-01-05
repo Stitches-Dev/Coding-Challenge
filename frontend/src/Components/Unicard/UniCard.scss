@@ -1,0 +1,123 @@
+.uniCard_main_div {
+  margin: 0;
+  border: 4px solid;
+  box-shadow: var(--shadow);
+  border-radius: 22px;
+  height: 235px;
+  padding-bottom: 0.5rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  width: 93%;
+
+  .uniCard_image {
+    border-radius: 18px 18px 0px 0px;
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+  }
+  .uniCard_content {
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+  .uniCard_content_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+  }
+  .uniCard_content_header_title {
+    display: flex;
+    align-items: center;
+  }
+
+  .uniCard_uniName {
+    font-family: P_Bold;
+    margin: 0;
+  }
+
+  .uniCard_content_header_logo {
+    margin-right: 0.5rem;
+    width: 45px;
+    height: auto;
+  }
+  .uniCard_content_header_location {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    width: fit-content;
+    font-size: 0.8rem;
+  }
+  .uniCard_location {
+    width: 12px;
+    height: auto;
+  }
+  .uniCard_content_body {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .uniCard_content_body_description {
+    font-size: 0.8rem;
+    width: 80%;
+    height: 55px;
+    overflow: hidden;
+    color: var(--darkgrey);
+  }
+
+  .uniCard_favorite {
+    width: 30px;
+    top: 185px;
+    right: 1rem;
+    z-index: 2;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 500px) {
+    .uniCard_content_header {
+      align-items: center;
+    }
+    .uniCard_content_header_title {
+      align-items: center !important;
+      gap: 5px;
+    }
+    .uniCard_uniName {
+      font-size: 0.9rem;
+    }
+    .uniCard_content_header_logo {
+      width: 30px;
+    }
+    .uniCard_content_header_location {
+      align-items: center;
+      font-size: 0.7rem;
+    }
+    .uniCard_content_body_description {
+      height: 70px;
+    }
+  }
+}
+
+.uniCard_main_div:hover {
+  transform: translate(-2px, -3px);
+  box-shadow: var(--shadow-hover);
+  transition: 0.3s ease;
+}
+.uniCard_content_header_title {
+  align-items: center !important;
+}
+.full_uni {
+  opacity: 75%;
+  border-color: var(--grey);
+  box-shadow: var(--greyShadow);
+}
+
+.full_uni:hover {
+  transform: translate(-2px, -3px);
+  box-shadow: var(--greyshadow-hover);
+  transition: 0.3s ease;
+}
+
+.arrow_img_disable {
+  display: none;
+}
