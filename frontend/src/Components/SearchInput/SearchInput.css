@@ -1,0 +1,23 @@
+.sInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    margin-right: 45px;
+  }
+  
+  .sInput {
+    border: none;
+    outline: none; 
+  }
+  
+  .sInput:focus {
+    border: none;
+  }
+  
+  .inputImage {
+    height: 10px;
+    width: 10px;
+  }

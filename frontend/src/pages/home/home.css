@@ -1,0 +1,52 @@
+.homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  padding: 20px;
+}
+
+.homeTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+
+.homeBody {
+  width: 100%;
+  padding: 20px;
+}
+
+.cardContainer {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  width: 100vw;
+}
+
+.unicard {
+  padding: 20px;
+  text-align: center;
+ 
+ 
+  border-radius: 8px;
+  
+}
+
+.titleTop {
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 640px) {
+  .homeTop{
+    flex-direction: column;
+
+  }
+}

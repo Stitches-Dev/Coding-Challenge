@@ -1,9 +1,15 @@
 const router = require("express").Router();
 const { getAllUniversities } = require("../controllers/universityController");
 const { getMajorsByFaculty } = require("../controllers/majorController");
-const { getAvailableDegreesForMajorById } = require("../controllers/degreeController");
-const { getMajorDegreeByKeys } = require("../controllers/majorDegreeController");
-const { getFacultiesByUniversity } = require("../controllers/facultyController");
+const {
+  getAvailableDegreesForMajorById,
+} = require("../controllers/degreeController");
+const {
+  getMajorDegreeByKeys,
+} = require("../controllers/majorDegreeController");
+const {
+  getFacultiesByUniversity,
+} = require("../controllers/facultyController");
 
 router.get("/all", getAllUniversities);
 router.get("/:university_id/faculties", getFacultiesByUniversity);
