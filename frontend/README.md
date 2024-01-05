@@ -4,7 +4,7 @@ Welcome to Stitches Studios where we aim to implement a sleek and modern user in
 
 # Task at Hand
 
-Your mission, should you choose to accept it, is to transform the provided design into a fully functional and visually appealing user interface. Some components, such as buttons, search input, and university card are ready for use.Focus on implementing the remaining design elements and ensuring a seamless user experience.
+Your mission, should you choose to accept it, is to transform the provided design into a fully functional and visually appealing user interface. Some components, such as buttons, and university card are ready for use.Focus on implementing the remaining design elements and ensuring a seamless user experience.
 
 # Project Description
 
@@ -14,14 +14,13 @@ Your mission, should you choose to accept it, is to transform the provided desig
 
 - Get all the universities paginated with their details, as shown in the design.
 - Implement the pagination design, and functionality
-- The user can search for a university by name
 
 ### Single University Page
 
 - Upon clicking on each University card, it should navigate to a single univeristy page, where more details for the university are shown.
 - Each university provides different faculties.
 - Each faculty offers multiple majors.
-- Each faculty with one of its chosen major, provide certain degrees.
+- Each major, provide certain degrees.
 - After choosing all three - faculty, major, and degree - the major degree details will be fetched
 
 # API Integration
@@ -30,27 +29,27 @@ To fetch data from the backend, use the following API:
 
 **To get all the univeristies (pagination, and search by name):**
 
-> Endpoint: /career-test/launch-test
+> Endpoint: /university/all?limit=10&offset=0
 > Request Type: GET
 
-**To get single university details:**
+**To get facukties by university id:**
 
-> Endpoint: /career-test/:careerTestId/questions
+> Endpoint: /university/:university_id/faculties
 > Request Type: GET
 
 **To get majors by faculty id:**
 
-> Endpoint: /career-test/:careerTestId
+> Endpoint: /university/majors/faculty/:faculty_id
 > Request Type: GET
 
-**To get degree by faculty and major id:**
+**To get available degree by major id:**
 
-> Endpoint: /career-test/result/:careerTestId
+> Endpoint: /university/degrees/major/:major_id
 > Request Type: GET
 
 **To get major degree details, by major and degree id:**
 
-> Endpoint: /examinee
+> Endpoint: /university/major/:major_id/degree/:degree_id
 > Request Type: GET
 
 # Optimization Guidelines
